@@ -7,187 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #f7f5f2;
-            --text-primary: #2d2a26;
-            --text-secondary: #5c5853;
-            --accent-color: #8b7355;
-            --card-bg: #ffffff;
-            --border-color: #e8e3dc;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #1a1918;
-                --text-primary: #ededed;
-                --text-secondary: #a39e99;
-                --accent-color: #d4b895;
-                --card-bg: #242221;
-                --border-color: #383533;
-            }
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 4rem;
-            animation: fadeInDown 0.8s ease-out;
-        }
-
-        .logo {
-            font-family: 'Crimson Pro', serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-            letter-spacing: -0.02em;
-        }
-
-        h1 {
-            font-family: 'Crimson Pro', serif;
-            font-size: 3rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            color: var(--text-primary);
-        }
-
-        .meta {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            font-weight: 500;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-
-        .policy-content {
-            background-color: var(--card-bg);
-            padding: 3rem 4rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
-            border: 1px solid var(--border-color);
-            animation: fadeInUp 0.8s ease-out 0.2s both;
-        }
-
-        .intro {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 3rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        section {
-            margin-bottom: 3rem;
-        }
-
-        section:last-child {
-            margin-bottom: 0;
-        }
-
-        h2 {
-            font-family: 'Crimson Pro', serif;
-            font-size: 1.75rem;
-            font-weight: 600;
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-            font-weight: 400;
-        }
-
-        ul {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-            color: var(--text-primary);
-        }
-
-        li {
-            margin-bottom: 0.5rem;
-            position: relative;
-            list-style-type: disc;
-        }
-
-        li::marker {
-            color: var(--accent-color);
-        }
-
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-            transition: opacity 0.2s;
-            border-bottom: 1px dotted var(--accent-color);
-        }
-
-        a:hover {
-            opacity: 0.8;
-            border-bottom-style: solid;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 4rem;
-            padding-top: 2rem;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            border-top: 1px solid var(--border-color);
-            animation: fadeIn 1s ease-out 0.6s both;
-        }
-
-        /* Animations */
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 2rem 1rem;
-            }
-            .policy-content {
-                padding: 2rem;
-            }
-            h1 {
-                font-size: 2.25rem;
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -198,7 +19,7 @@
             <div class="meta">Effective Date: April 7, 2026</div>
         </header>
 
-        <main class="policy-content">
+        <main class="content-card">
             <div class="intro">
                 <p>Don't Skip Today ("the App") is operated by Spencer Holland.</p>
                 <p>This Privacy Policy explains how the App handles information.</p>
@@ -293,6 +114,11 @@
             </section>
 
         </main>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">Privacy Policy</a>
+            <a href="support.html">Support</a>
+        </div>
 
         <footer>
             &copy; 2026 Don't Skip Today. All rights reserved.
